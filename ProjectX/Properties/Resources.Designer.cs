@@ -192,5 +192,127 @@ namespace ProjectX.Properties {
                 return ResourceManager.GetString("HeroStartSpeed", resourceCulture);
             }
         }
+
+        internal static string EnemyCount {
+            get {
+                return ResourceManager.GetString("EnemyCount", resourceCulture);
+            }
+        }
+
+        internal static System.Drawing.Bitmap HealthBonus {
+            get {
+                object obj = ResourceManager.GetObject("HealthBonus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static string HealthBonusValue {
+            get {
+                return ResourceManager.GetString("HealthBonusValue", resourceCulture);
+            }
+        }
+
+        internal static System.Drawing.Bitmap PoisonBerry {
+            get {
+                object obj = ResourceManager.GetObject("PoisonBerry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static string BonusCount {
+            get {
+                return ResourceManager.GetString("BonusCount", resourceCulture);
+            }
+        }
+
+        internal static System.Drawing.Bitmap Interface {
+            get {
+                object obj = ResourceManager.GetObject("Interface", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap InputInstrucion {
+            get {
+                object obj = ResourceManager.GetObject("InputInstrucion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap DeathScreen {
+            get {
+                object obj = ResourceManager.GetObject("DeathScreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap WinScreen {
+            get {
+                object obj = ResourceManager.GetObject("WinScreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap Pause {
+            get {
+                object obj = ResourceManager.GetObject("Pause", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap Rule0 {
+            get {
+                object obj = ResourceManager.GetObject("Rule0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Rule1 {
+            get {
+                object obj = ResourceManager.GetObject("Rule1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Rule2 {
+            get {
+                object obj = ResourceManager.GetObject("Rule2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Rule3 {
+            get {
+                object obj = ResourceManager.GetObject("Rule3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Rule4 {
+            get {
+                object obj = ResourceManager.GetObject("Rule4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Rule5 {
+            get {
+                object obj = ResourceManager.GetObject("Rule5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static string TimeBonusValue {
+            get {
+                return ResourceManager.GetString("TimeBonusValue", resourceCulture);
+            }
+        }
+
+        internal static System.Drawing.Bitmap AngryMushroom {
+            get {
+                object obj = ResourceManager.GetObject("AngryMushroom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

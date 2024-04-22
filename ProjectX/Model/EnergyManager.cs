@@ -1,7 +1,7 @@
 using System.Timers;
 using ProjectX.Properties;
 
-namespace ProjectX.Mangers
+namespace ProjectX.Model
 {
     public class EnergyManager
     {

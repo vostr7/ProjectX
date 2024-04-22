@@ -1,8 +1,9 @@
 using System.Drawing;
 using System.Windows.Forms;
-using ProjectX.Entities.Control;
 using ProjectX.Mangers;
+using ProjectX.Model;
 using ProjectX.Properties;
+using ProjectX.Views;
 
 namespace ProjectX.Entities
 {
@@ -13,16 +14,17 @@ namespace ProjectX.Entities
             get => View.Location;
             set => View.Location = value;
         }
+
         public Rectangle Bounds => View.Bounds;
         public Image Image => View.Image;
-        
+
         public PictureBox View = new()
         {
             Image = Resources.MainHero,
             Size = Resources.MainHero.Size,
             Location = new Point(0, 0)
         };
-        
+
         public int Speed { get; private set; }
         private int startSpeed;
         public int Health { get; private set; }
@@ -39,12 +41,12 @@ namespace ProjectX.Entities
         {
             var delta = new Size(dx * Speed, dy * Speed);
             var pos = Point.Add(Position, delta);
-            if (pos.X > -1500 && pos.X < 1500 && 
+            if (pos.X > -1500 && pos.X < 1500 &&
                 pos.Y > -1500 && pos.Y < 1500)
                 Position = pos;
 
         }
-        
+
         public void Move()
         {
             if (Controller.IsInputDown)
@@ -59,37 +61,51 @@ namespace ProjectX.Entities
 
         public Player(Point start, int speed, int health)
         {
-            
+
         }
-        
-        private void Pause()
+
+        public void Pause()
         {
             Stage = PlayerStage.Paused;
-            Speed = 0;    
+            Speed = 0;
         }
-        
+
         public void Die()
         {
             Health = 0;
             Pause();
             Stage = PlayerStage.Died;
         }
-        
+
         public void Start()
         {
             Stage = PlayerStage.Normal;
             Speed = startSpeed;
             eManager.Start();
         }
-        
+
         public void TakeHealth(int i)
         {
             Health += i;
         }
-        
+
         public void TakeEnergy(int i)
         {
             eManager.Energy += i;
+        }
+
+        public void Update()
+        {
+            Move();
+            if (Controller.IsHeal && Health >= 200)
+                Stage = PlayerStage.Heal;
+            if (BonusManager.BonusTime.Enabled)
+                Stage = PlayerStage.Angry;
+            else if (Stage == PlayerStage.Angry)
+            {
+                Stage = PlayerStage.Normal;
+                Health /= 2;
+            }
         }
     }
 }

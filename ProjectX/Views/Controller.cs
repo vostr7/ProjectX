@@ -1,6 +1,6 @@
 using System.Windows.Forms;
 
-namespace ProjectX.Entities.Control
+namespace ProjectX.Views
 {
     internal static class Controller
     {

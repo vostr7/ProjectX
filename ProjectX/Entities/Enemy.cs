@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -9,8 +10,8 @@ namespace ProjectX.Entities
     public class Enemy
     {
         public static List<Enemy> Objects;
-        private static readonly List<HealthyEnemy> HealthyEnemies = new();
-        private Rectangle Bounds => View.Bounds;
+        public static readonly List<HealthyEnemy> HealthyEnemies = new();
+        public Rectangle Bounds => View.Bounds;
         private Point Position => View.Location;
         public Image Image => View.Image;
 
@@ -24,6 +25,7 @@ namespace ProjectX.Entities
 
         private static readonly int Damage = int.Parse(Resources.EnemyDamage);
         private static readonly int Speed = int.Parse(Resources.EnemySpeed);
+
         public Enemy(Rectangle r)
         {
             View.Bounds = r;
