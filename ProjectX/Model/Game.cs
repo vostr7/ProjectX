@@ -26,11 +26,30 @@ namespace ProjectX.Model
         public Game()
         {
             Enemy.Objects = SpawnManager.Spawn(int.Parse(Resources.EnemyCount), Point.Empty)
-                .Select(x => new Enemy(x))
+                .Select(x=>new Enemy(x))
                 .ToList();
+            
             HealthBonus.Objects = SpawnManager.Spawn(int.Parse(Resources.BonusCount), Point.Empty)
-                .Select(x => new HealthBonus(x, false))
+                .Select(x=>new HealthBonus(x, false))
                 .ToList();
+            HealthBonus.Objects.AddRange(SpawnManager.Spawn(int.Parse(Resources.BonusCount)-10, Point.Empty)
+                .Select(x=>new HealthBonus(x, true))
+                .ToList());
+            
+            Bush.Objects = SpawnManager.Spawn(int.Parse(Resources.BushCount), Point.Empty)
+                .Select(x=>new Bush(x))
+                .ToList();
+            EnergyBonus.Objects = SpawnManager.Spawn(int.Parse(Resources.BonusCount)-10, Point.Empty)
+                .Select(x => new EnergyBonus(x))
+                .ToList();
+            Plant.Objects = SpawnManager.Spawn(int.Parse(Resources.PlantCount), Point.Empty)
+                .Select(x=>new Plant(x))
+                .ToList();
+            TimeBonus.Objects = SpawnManager.Spawn(int.Parse(Resources.BonusCount)-15, Point.Empty)
+                .Select(x=>new TimeBonus(x, true))
+                .ToList();
+            player.Stage = PlayerStage.Paused;
+            GameStage = GameStage.Pause;
 
         }
 

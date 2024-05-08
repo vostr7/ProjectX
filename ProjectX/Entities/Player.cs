@@ -36,6 +36,7 @@ namespace ProjectX.Entities
         private readonly EnergyManager eManager;
         public int Energy => eManager.Energy;
         public PlayerStage Stage;
+        public Bitmap Star = Resources.Star;
 
         private void Move(int dx, int dy)
         {
@@ -61,7 +62,13 @@ namespace ProjectX.Entities
 
         public Player(Point start, int speed, int health)
         {
-
+            eManager = new EnergyManager();
+            eManager.Start();
+            
+            Position = start;
+            Speed = speed;
+            startSpeed = speed;
+            Health = health;
         }
 
         public void Pause()
@@ -105,6 +112,27 @@ namespace ProjectX.Entities
             {
                 Stage = PlayerStage.Normal;
                 Health /= 2;
+            }
+            
+            switch (Stage)
+            {
+                case PlayerStage.Normal:
+                    View.Image = Resources.MainHero;
+                    Star = Resources.Star;
+                    break;
+                case PlayerStage.Died:
+                    View.Image = Resources.DeadHero;
+                    break;
+                case PlayerStage.Heal:
+                    View.Image = Resources.SmillingHero;
+                    View.Size = Resources.SmillingHero.Size;
+                    Star = Resources.Heart;
+                    break;
+                case PlayerStage.Angry:
+                    View.Image = Resources.AngryHero;
+                    View.Size = Resources.AngryHero.Size;
+                    eManager.Stop();
+                    break;
             }
         }
     }

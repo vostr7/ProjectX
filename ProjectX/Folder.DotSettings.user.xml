@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="MainHero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\lightly_character.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral</value>
+    </data>
+    <data name="Enemy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\enemy.png;System.Drawing.Bitmap, System.Drawing</value>
+    </data>
+    <data name="HealthBonus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\strawberry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Bush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\bush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Interface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\interface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="InputInstrucion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\input_instuction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="EnergyBonus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\blueberry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="HeroStartSpeed" xml:space="preserve">
+        <value>3</value>
+    </data>
+    <data name="EnemySpeed" xml:space="preserve">
+        <value>1</value>
+    </data>
+    <data name="EnemyCount" xml:space="preserve">
+        <value>10</value>
+    </data>
+    <data name="BonusCount" xml:space="preserve">
+        <value>20</value>
+    </data>
+    <data name="BushCount" xml:space="preserve">
+        <value>5</value>
+    </data>
+    <data name="HealthBonusValue" xml:space="preserve">
+        <value>10</value>
+    </data>
+    <data name="EnemyDamage" xml:space="preserve">
+        <value>1</value>
+    </data>
+    <data name="HeroStartHealth" xml:space="preserve">
+        <value>200</value>
+    </data>
+    <data name="SpawnLocationMin" xml:space="preserve">
+        <value>200</value>
+    </data>
+    <data name="SpawnLocationMax" xml:space="preserve">
+        <value>1500</value>
+    </data>
+    <data name="EnergyCount" xml:space="preserve">
+        <value>200</value>
+    </data>
+    <data name="EnergyBonusValue" xml:space="preserve">
+        <value>10</value>
+    </data>
+    <data name="Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+
+    <data name="Pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+
+    <data name="Rule0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\rules0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Rule1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\rules1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Rule2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\rules2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Rule3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\rules3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Rule4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\rules4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Rule5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\rules5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+
+    <data name="DeadHero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\scull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="AngryHero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\angry_character.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="InvisibleHero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\rules4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="SmillingHero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\smilly_character.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+
+    <data name="DeathScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\deathscreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="WinScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\winscreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+
+    <data name="PoisonBerry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\rottenstrawberry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="InvisibleMushroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\invisible_mushroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="AngryMushroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\angry_mushroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+
+    <data name="Buba0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\buba0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Buba1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\buba1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Buba2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\buba2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Buba3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\buba3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Buba4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\buba4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Buba5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\buba5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+
+    <data name="Plant0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\plant0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Plant1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\plant1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Plant2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\plant2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Plant3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\WinFormsApp1\Sprites\plant3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+
+    <data name="PlantCount" xml:space="preserve">
+        <value>15</value>
+    </data>
+
+    <data name="TimeBonusValue" xml:space="preserve">
+        <value>10</value>
+    </data>
+</root>

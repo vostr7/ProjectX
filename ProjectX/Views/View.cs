@@ -1,7 +1,6 @@
 using System.Drawing;
 using System.Linq;
 using ProjectX.Entities;
-using ProjectX.Mangers;
 using ProjectX.Model;
 
 namespace ProjectX.Views
@@ -37,15 +36,15 @@ namespace ProjectX.Views
             
             
             
-            // foreach (var h in Enemy.HealthyEnemies)
-            //     if (h.Bounds.IntersectsWith(game.ViewZone))
-            //         g.DrawImage(h.Image, h.Bounds);
-            // foreach (var h in Plant.Objects)
-            //     if (h.Bounds.IntersectsWith(game.ViewZone))
-            //         g.DrawImage(h.Image, h.Bounds);
+            foreach (var h in Enemy.HealthyEnemies)
+                if (h.Bounds.IntersectsWith(game.ViewZone))
+                    g.DrawImage(h.Image, h.Bounds);
+            foreach (var h in Plant.Objects)
+                if (h.Bounds.IntersectsWith(game.ViewZone))
+                    g.DrawImage(h.Image, h.Bounds);
 
-            // g.DrawImage(game.player.Star, game.player.Position+new Size(15, -25));
-            // g.DrawImage(game.player.Image, game.player.Position);
+            g.DrawImage(game.player.Star, game.player.Position+new Size(15, -25));
+            g.DrawImage(game.player.Image, game.player.Position);
             
             foreach (var enemy in Enemy.Objects.Where(enemy => enemy.Bounds.IntersectsWith(game.ViewZone)))
                 g.DrawImage(enemy.Image, enemy.Bounds);
